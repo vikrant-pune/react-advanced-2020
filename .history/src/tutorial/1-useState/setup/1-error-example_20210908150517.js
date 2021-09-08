@@ -1,15 +1,14 @@
-import React, { useState } from "react";
+import React from 'react';
+
 
 const ErrorExample = () => {
   let title = "Random";
 
-  const [text, setText] = useState("Random Title");
+  const [text, settext] = useState("Random Title");
 
   const handleClick = () => {
     title = "Hi Cuttie!";
     console.log(title);
-    if (text != title) setText(title);
-    else setText("BBye!");
   };
 
   return (

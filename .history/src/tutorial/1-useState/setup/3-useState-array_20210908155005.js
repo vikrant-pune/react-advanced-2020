@@ -13,7 +13,7 @@ const UseStateArray = () => {
   // );
 
   const removeItem = (id) => {
-    let newPeople = people.filter((pep) => pep.id !== id);
+    let newPeople = people.filter((pep) => pep.id !== 1);
     setPeople(newPeople);
   };
 
@@ -25,7 +25,7 @@ const UseStateArray = () => {
         return (
           <div key={id} className="item">
             <h4> {name}</h4>
-            <button onClick={() => removeItem(id)}>remove</button>
+            <button onClick={removeItem(id)}>remove</button>
           </div>
         );
       })}

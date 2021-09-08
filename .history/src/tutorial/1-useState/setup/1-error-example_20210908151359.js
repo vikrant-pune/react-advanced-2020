@@ -9,7 +9,10 @@ const ErrorExample = () => {
     title = "Hi Cuttie!";
     console.log(title);
     if (text != title) setText(title);
-    else setText("BBye!");
+    else {
+      if (text != "BBye!") setText("Cooking ... ");
+      else setText("BBye!");
+    }
   };
 
   return (

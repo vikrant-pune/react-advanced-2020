@@ -13,7 +13,7 @@ const UseStateArray = () => {
   // );
 
   const removeItem = (id) => {
-    let newPeople = people.filter((pep) => pep.id !== id);
+    let newPeople = people.filter((pep) => pep.id !== 1);
     setPeople(newPeople);
   };
 

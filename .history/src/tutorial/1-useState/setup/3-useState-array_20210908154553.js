@@ -25,7 +25,7 @@ const UseStateArray = () => {
         return (
           <div key={id} className="item">
             <h4> {name}</h4>
-            <button onClick={() => removeItem(id)}>remove</button>
+            <button className="btn" onClick={() => removeItem(id)}></button>
           </div>
         );
       })}
@@ -33,7 +33,7 @@ const UseStateArray = () => {
       <button
         className="btn"
         onClick={() => {
-          if (people[0].name !== "Ram") {
+          if (people[0].name != "Ram") {
             setPeople([
               { id: 1, name: "Ram" },
               { id: 2, name: "Laxman" },
@@ -43,7 +43,7 @@ const UseStateArray = () => {
           }
         }}
       >
-        Flip2
+        Flip
       </button>
     </>
   );

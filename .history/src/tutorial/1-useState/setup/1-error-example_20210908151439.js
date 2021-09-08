@@ -8,8 +8,11 @@ const ErrorExample = () => {
   const handleClick = () => {
     title = "Hi Cuttie!";
     console.log(title);
-    if (text != title) setText(title);
-    else setText("BBye!");
+    if ((text != title) & (text != "")) setText(title);
+    else {
+      if (text != "BBye!") setText("Cooking ... ");
+      else setText("BBye!");
+    }
   };
 
   return (
